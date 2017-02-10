@@ -10,7 +10,6 @@ config.General.requestName = 'CRAB3_Small_Output_Brazos'+tt
 config.General.workArea = '../crab_jobs'
 config.General.transferOutputs = True
 config.General.transferLogs = True
-# config.General.instance = 'preprod'   #particular TAMU glideIns (not used anymore!)
 
 config.JobType.pluginName = 'Analysis'
 config.JobType.psetName = '../analysiscode/pset_tutorial_analysis.py'
@@ -26,12 +25,3 @@ config.Data.outputDatasetTag = 'CRAB3_monitor_test'
 config.Site.storageSite = 'T3_US_TAMU'
 config.Site.whitelist = ['T3_US_TAMU']
 
-
-# THESE AREN'T USED ANYMORE! WAS FOR DEBUGGING THE GlideIN Hook!!
-# special TAMU GlideIn config 
-# config.section_("Debug")
-# config.Debug.collector = 'vocms0115.cern.ch'
-# config.Debug.scheddName = 'crab3-itb02@vocms068.cern.ch'
-
-#config.Debug.scheddName = 'crab3test-8@vocms058.cern.ch'
-#config.Debug.collector = 'vocms0115.cern.ch'
