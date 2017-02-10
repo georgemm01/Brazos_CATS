@@ -1,0 +1,6 @@
+150415_122512: /home/georgemm01/CRAB_2_10_6/python/crab.py -status -c JetMETAnalysis/JetAnalyzers/test/SLURM_Output_Brazos
+150415_122539: /home/georgemm01/CRAB_2_10_6/python/crab.py -getoutput -c JetMETAnalysis/JetAnalyzers/test/SLURM_Output_Brazos
+150415_122544: /home/georgemm01/CRAB_2_10_6/python/crab.py -status -c JetMETAnalysis/JetAnalyzers/test/SLURM_Output_Brazos
+151214_154705: /home/georgemm01/CRAB_2_11_1_patch1/python/crab.py -status -c JetMETAnalysis/JetAnalyzers/test/SLURM_Large_Output_FNAL/
+151214_154722: /home/georgemm01/CRAB_2_11_1_patch1/python/crab.py -status -c JetMETAnalysis/JetAnalyzers/test/SLURM_Large_Output_FNAL/
+151214_164314: /home/georgemm01/CRAB_2_11_1_patch1/python/crab.py -status -c JetMETAnalysis/JetAnalyzers/test/SLURM_Large_Output_FNAL/

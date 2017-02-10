@@ -1,0 +1,10 @@
+tmp/slc6_amd64_gcc472/src/JetMETAnalysis/JetAnalyzers/bin/jet_synchtest_x/jet_synchtest_x.o: \
+ src/JetMETAnalysis/JetAnalyzers/bin/jet_synchtest_x.cc \
+ src/JetMETAnalysis/JetUtilities/interface/CommandLine.h \
+ src/JetMETAnalysis/JetUtilities/interface/JRANtuple.h \
+ src/JetMETAnalysis/JetUtilities/interface/JetInfo.hh \
+ src/JetMETAnalysis/JetAnalyzers/interface/Settings.h \
+ src/JetMETAnalysis/JetUtilities/interface/EvtID.hh \
+ src/CondFormats/JetMETObjects/interface/JetCorrectorParameters.h \
+ src/CondFormats/JetMETObjects/interface/FactorizedJetCorrector.h \
+

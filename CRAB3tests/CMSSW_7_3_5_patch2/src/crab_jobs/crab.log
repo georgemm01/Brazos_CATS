@@ -1,0 +1,41 @@
+DEBUG 2016-05-13 10:33:31,259: 	 Executing command: 'status'
+DEBUG 2016-05-13 10:33:31,261: 	 Found CRAB cache file /home/georgemm01/.crab3
+DEBUG 2016-05-13 10:33:31,293: 	 Checking credentials
+DEBUG 2016-05-13 10:33:31,294: 	 Proxy file /tmp/x509up_u1452 not found
+DEBUG 2016-05-13 10:33:31,294: 	 Creating new proxy for 24:00 hours with VO group '' and VO role 'NULL'.
+DEBUG 2016-05-13 10:33:39,014: 	 Executing : 
+ command : voms-proxy-init -voms cms:/cms -valid 24:00 -rfc
+ output : None
+ error: None
+ retcode : 3
+DEBUG 2016-05-13 10:33:39,120: 	 Executing : 
+ command : voms-proxy-info -file /tmp/x509up_u1452 -timeleft
+ output : 
+ error: 
+Couldn't find a valid proxy.
+
+
+ retcode : 1
+ERROR 2016-05-13 10:33:39,120: 	 Error while checking proxy timeleft for /tmp/x509up_u1452
+DEBUG 2016-05-13 10:33:39,225: 	 Executing : 
+ command : env X509_USER_PROXY=/tmp/x509up_u1452 voms-proxy-info -fqan
+ output : 
+ error: 
+Couldn't find a valid proxy.
+
+
+ retcode : 1
+ERROR 2016-05-13 10:33:39,226: 	 Problems creating proxy.
+ERROR 2016-05-13 10:33:39,226: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1605/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1605/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1605/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 289, in __init__
+    self.proxyCreated = self.proxy.createNewVomsProxySimple(timeLeftThreshold = 720)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1605/lib/python2.7/site-packages/CRABClient/CredentialInteractions.py", line 152, in createNewVomsProxySimple
+    raise ProxyCreationException("Problems creating proxy.")
+ProxyCreationException: Problems creating proxy.
+DEBUG 2017-01-29 12:22:42,515: 	 Executing command: 'status'
+DEBUG 2017-01-29 12:22:42,516: 	 Found CRAB cache file /home/georgemm01/.crab3

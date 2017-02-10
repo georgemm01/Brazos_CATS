@@ -1,0 +1,4 @@
+tmp/slc6_amd64_gcc472/src/CondFormats/JetMETObjects/bin/JetResolution_t/JetResolution_t.o: \
+ src/CondFormats/JetMETObjects/bin/JetResolution_t.cc \
+ src/CondFormats/JetMETObjects/interface/JetResolution.h \
+

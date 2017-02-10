@@ -1,0 +1,6 @@
+tmp/slc6_amd64_gcc472/src/JetMETAnalysis/JetAnalyzers/bin/jet_draw_closure_pt_ratio_x/jet_draw_closure_pt_ratio_x.o: \
+ src/JetMETAnalysis/JetAnalyzers/bin/jet_draw_closure_pt_ratio_x.cc \
+ src/JetMETAnalysis/JetUtilities/interface/CommandLine.h \
+ src/JetMETAnalysis/JetAnalyzers/interface/Settings.h \
+ src/JetMETAnalysis/JetAnalyzers/interface/Style.h \
+

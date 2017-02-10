@@ -1,0 +1,9 @@
+tmp/slc6_amd64_gcc472/src/JetMETAnalysis/JetAnalyzers/bin/jet_draw_corrections_x/jet_draw_corrections_x.o: \
+ src/JetMETAnalysis/JetAnalyzers/bin/jet_draw_corrections_x.cc \
+ src/JetMETAnalysis/JetAnalyzers/interface/Style.h \
+ src/JetMETAnalysis/JetUtilities/interface/CommandLine.h \
+ src/JetMETAnalysis/JetUtilities/interface/JetInfo.hh \
+ src/JetMETAnalysis/JetAnalyzers/interface/Settings.h \
+ src/CondFormats/JetMETObjects/interface/JetCorrectorParameters.h \
+ src/CondFormats/JetMETObjects/interface/FactorizedJetCorrector.h \
+

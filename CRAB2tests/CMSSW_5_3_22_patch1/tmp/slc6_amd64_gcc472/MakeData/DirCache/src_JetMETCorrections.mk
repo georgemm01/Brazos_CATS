@@ -1,0 +1,2 @@
+ALL_SUBSYSTEMS+=JetMETCorrections
+subdirs_src_JetMETCorrections = src_JetMETCorrections_Modules src_JetMETCorrections_Algorithms

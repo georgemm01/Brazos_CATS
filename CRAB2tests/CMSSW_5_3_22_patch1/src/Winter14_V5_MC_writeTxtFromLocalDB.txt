@@ -1,0 +1,126 @@
+Inspecting JEC payload with label: AK5PF
+-------------------------------------------------
+Processing key = 1
+object label: L2Relative
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5PF_L2Relative.txt
+-------------------------------------------------
+Processing key = 2
+object label: L3Absolute
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5PF_L3Absolute.txt
+-------------------------------------------------
+Processing key = 8
+object label: L2L3Residual
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5PF_L2L3Residual.txt
+-------------------------------------------------
+Processing key = 9
+object label: Uncertainty
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5PF_Uncertainty.txt
+-------------------------------------------------
+Processing key = 10
+object label: L1FastJet
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5PF_L1FastJet.txt
+Inspecting JEC payload with label: AK5PFchs
+-------------------------------------------------
+Processing key = 1
+object label: L2Relative
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5PFchs_L2Relative.txt
+-------------------------------------------------
+Processing key = 2
+object label: L3Absolute
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5PFchs_L3Absolute.txt
+-------------------------------------------------
+Processing key = 8
+object label: L2L3Residual
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5PFchs_L2L3Residual.txt
+-------------------------------------------------
+Processing key = 9
+object label: Uncertainty
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5PFchs_Uncertainty.txt
+-------------------------------------------------
+Processing key = 10
+object label: L1FastJet
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5PFchs_L1FastJet.txt
+Inspecting JEC payload with label: AK5Calo
+-------------------------------------------------
+Processing key = 1
+object label: L2Relative
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5Calo_L2Relative.txt
+-------------------------------------------------
+Processing key = 2
+object label: L3Absolute
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5Calo_L3Absolute.txt
+-------------------------------------------------
+Processing key = 8
+object label: L2L3Residual
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5Calo_L2L3Residual.txt
+-------------------------------------------------
+Processing key = 9
+object label: Uncertainty
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5Calo_Uncertainty.txt
+-------------------------------------------------
+Processing key = 10
+object label: L1FastJet
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK5Calo_L1FastJet.txt
+Inspecting JEC payload with label: AK7PF
+-------------------------------------------------
+Processing key = 1
+object label: L2Relative
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7PF_L2Relative.txt
+-------------------------------------------------
+Processing key = 2
+object label: L3Absolute
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7PF_L3Absolute.txt
+-------------------------------------------------
+Processing key = 8
+object label: L2L3Residual
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7PF_L2L3Residual.txt
+-------------------------------------------------
+Processing key = 9
+object label: Uncertainty
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7PF_Uncertainty.txt
+-------------------------------------------------
+Processing key = 10
+object label: L1FastJet
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7PF_L1FastJet.txt
+Inspecting JEC payload with label: AK7PFchs
+-------------------------------------------------
+Processing key = 1
+object label: L2Relative
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7PFchs_L2Relative.txt
+-------------------------------------------------
+Processing key = 2
+object label: L3Absolute
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7PFchs_L3Absolute.txt
+-------------------------------------------------
+Processing key = 8
+object label: L2L3Residual
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7PFchs_L2L3Residual.txt
+-------------------------------------------------
+Processing key = 9
+object label: Uncertainty
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7PFchs_Uncertainty.txt
+-------------------------------------------------
+Processing key = 10
+object label: L1FastJet
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7PFchs_L1FastJet.txt
+Inspecting JEC payload with label: AK7Calo
+-------------------------------------------------
+Processing key = 1
+object label: L2Relative
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7Calo_L2Relative.txt
+-------------------------------------------------
+Processing key = 2
+object label: L3Absolute
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7Calo_L3Absolute.txt
+-------------------------------------------------
+Processing key = 8
+object label: L2L3Residual
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7Calo_L2L3Residual.txt
+-------------------------------------------------
+Processing key = 9
+object label: Uncertainty
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7Calo_Uncertainty.txt
+-------------------------------------------------
+Processing key = 10
+object label: L1FastJet
+Creating txt file: Winter14_V5_MC_txts_fromDB/Winter14_V5_MC_AK7Calo_L1FastJet.txt

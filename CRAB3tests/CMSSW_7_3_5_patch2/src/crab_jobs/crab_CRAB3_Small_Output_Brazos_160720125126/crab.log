@@ -1,0 +1,168 @@
+DEBUG 2016-07-20 12:51:26,569: 	 Executing command: 'submit'
+DEBUG 2016-07-20 12:51:26,570: 	 Found CRAB cache file /home/georgemm01/.crab3
+DEBUG 2016-07-20 12:51:26,590: 	 Checking credentials
+DEBUG 2016-07-20 12:51:26,590: 	 Found proxy file /home/georgemm01/.x509up_u1452
+DEBUG 2016-07-20 12:51:26,590: 	 Getting proxy life time left
+DEBUG 2016-07-20 12:51:26,695: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -timeleft
+ output : 691176
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-20 12:51:26,800: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -actimeleft
+ output : 691176
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-20 12:51:26,800: 	 Proxy valid for 191:59:36 hours
+INFO 2016-07-20 12:51:26,801: 	 Will use CRAB configuration file crabConfig_tutorial_MC_analysis.py
+DEBUG 2016-07-20 12:51:26,801: 	 Loading CRAB configuration file.
+DEBUG 2016-07-20 12:51:29,643: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2016-07-20 12:51:30,279: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-20 12:51:30,280: 	 Checking credentials
+DEBUG 2016-07-20 12:51:30,280: 	 Found proxy file /home/georgemm01/.x509up_u1452
+DEBUG 2016-07-20 12:51:30,280: 	 Getting proxy life time left
+DEBUG 2016-07-20 12:51:30,389: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -timeleft
+ output : 691172
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-20 12:51:30,495: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -actimeleft
+ output : 691172
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-20 12:51:30,495: 	 Proxy valid for 191:59:32 hours
+DEBUG 2016-07-20 12:51:30,600: 	 Executing : 
+ command : env X509_USER_PROXY=/home/georgemm01/.x509up_u1452 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+/cms/uscms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-20 12:51:31,926: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-07-20 12:51:32,038: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-20 12:51:32,039: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-07-20 12:51:32,039: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza_cmsweb.cern.ch for credential name
+DEBUG 2016-07-20 12:51:34,650: 	 Executing : 
+ command : myproxy-info -l 8908d96525ffb0442c032582ca2ff06415922363 -s myproxy.cern.ch
+ output : username: 8908d96525ffb0442c032582ca2ff06415922363
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 72:54:23  (3.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-20 12:51:34,652: 	 Myproxy is valid: 262463
+DEBUG 2016-07-20 12:51:34,757: 	 Executing : 
+ command : openssl x509 -noout -in ~/.globus/usercert.pem -dates
+ output : notBefore=Jun 16 20:28:04 2016 GMT
+notAfter=Jul 21 20:28:04 2017 GMT
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-20 12:51:34,944: 	 Delegating a myproxy for 720:00 hours
+DEBUG 2016-07-20 12:51:34,944: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza_cmsweb.cern.ch for credential name
+DEBUG 2016-07-20 12:51:44,173: 	 Executing : 
+ command : export GT_PROXY_MODE=rfc ; myproxy-init -d -n -s myproxy.cern.ch -x -R '/DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch' -x -Z '/DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch' -l '8908d96525ffb0442c032582ca2ff06415922363' -t 168:00 -c 720:00
+ output : Your identity: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza
+Creating proxy ............................................................................................................................................................................................................................................................................ Done
+Proxy Verify OK
+Your proxy is valid until: Fri Aug 19 12:51:42 2016
+A proxy valid for 720 hours (30.0 days) for user 8908d96525ffb0442c032582ca2ff06415922363 now exists on myproxy.cern.ch.
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-20 12:51:44,173: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza_cmsweb.cern.ch for credential name
+DEBUG 2016-07-20 12:51:45,281: 	 Executing : 
+ command : myproxy-info -l 8908d96525ffb0442c032582ca2ff06415922363 -s myproxy.cern.ch
+ output : username: 8908d96525ffb0442c032582ca2ff06415922363
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 719:59:57  (30.0 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-20 12:51:45,282: 	 My-proxy delegated.
+DEBUG 2016-07-20 12:51:45,282: 	 Command use: submit
+DEBUG 2016-07-20 12:51:45,282: 	 Options use: ['-c', 'crabConfig_tutorial_MC_analysis.py']
+DEBUG 2016-07-20 12:51:46,578: 	 CRABClient version: 3.3.1607
+DEBUG 2016-07-20 12:51:46,578: 	 Instance is prod
+DEBUG 2016-07-20 12:51:46,578: 	 Server base url is cmsweb.cern.ch
+DEBUG 2016-07-20 12:51:46,578: 	 Command url /crabserver/prod/workflow
+DEBUG 2016-07-20 12:51:46,578: 	 Started submission
+DEBUG 2016-07-20 12:51:46,578: 	 Working on /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/src/crab_jobs/crab_CRAB3_Small_Output_Brazos_160720125126
+DEBUG 2016-07-20 12:51:48,639: 	 Loading required information from the environment
+DEBUG 2016-07-20 12:51:48,639: 	 Found CMSSW_7_3_5_patch2 for slc6_amd64_gcc491 with base /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2
+DEBUG 2016-07-20 12:51:48,668: 	 UNIQUE NAME: tarUUID f01d3892-1371-4878-9f59-04d3ea696fe6 
+DEBUG 2016-07-20 12:51:48,669: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.transferLogs = True
+config.General.transferOutputs = True
+config.General.workArea = '../crab_jobs'
+config.General.requestName = 'CRAB3_Small_Output_Brazos_160720125126'
+config.section_('JobType')
+config.JobType.psetName = '../analysiscode/pset_tutorial_analysis.py'
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDataset = '/GenericTTbar/HC-CMSSW_5_3_1_START53_V5-v1/GEN-SIM-RECO'
+config.Data.outputDatasetTag = 'CRAB3_monitor_test'
+config.Data.publication = True
+config.Data.unitsPerJob = 10
+config.Data.inputDBS = 'global'
+config.Data.splitting = 'FileBased'
+config.Data.outLFNDirBase = '/store/user/moralesm/'
+config.section_('Site')
+config.Site.whitelist = ['T3_US_TAMU']
+config.Site.storageSite = 'T3_US_TAMU'
+config.section_('User')
+config.section_('Debug')
+config.Debug.scheddName = 'crab3test-8@vocms058.cern.ch'
+config.Debug.collector = 'vocms0115.cern.ch'
+
+DEBUG 2016-07-20 12:51:48,669: 	 self.config.JobType.psetName: ../analysiscode/pset_tutorial_analysis.py
+INFO 2016-07-20 12:51:48,670: 	 Importing CMSSW configuration ../analysiscode/pset_tutorial_analysis.py
+INFO 2016-07-20 12:51:49,812: 	 Finished importing CMSSW configuration ../analysiscode/pset_tutorial_analysis.py
+DEBUG 2016-07-20 12:51:49,812: 	 Writing CMSSW configuration to /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/src/crab_jobs/crab_CRAB3_Small_Output_Brazos_160720125126/inputs/PSet.py
+DEBUG 2016-07-20 12:51:49,850: 	 The following EDM output files will be collected: ['output.root']
+DEBUG 2016-07-20 12:51:49,850: 	 The following TFile output files will be collected: []
+DEBUG 2016-07-20 12:51:49,850: 	 The following user output files will be collected: []
+DEBUG 2016-07-20 12:51:49,850: 	 Loading required information from the environment
+DEBUG 2016-07-20 12:51:49,850: 	 Found CMSSW_7_3_5_patch2 for slc6_amd64_gcc491 with base /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2
+DEBUG 2016-07-20 12:51:49,850: 	 Making tarball in /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/src/crab_jobs/crab_CRAB3_Small_Output_Brazos_160720125126/inputs/f01d3892-1371-4878-9f59-04d3ea696fe6default.tgz
+DEBUG 2016-07-20 12:51:49,851: 	 Checking directory /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/lib
+DEBUG 2016-07-20 12:51:49,851: 	 Adding directory /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/lib to tarball
+DEBUG 2016-07-20 12:51:49,856: 	 Checking directory /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/biglib
+DEBUG 2016-07-20 12:51:49,856: 	 Adding directory /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/biglib to tarball
+DEBUG 2016-07-20 12:51:49,858: 	 Checking directory /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/module
+DEBUG 2016-07-20 12:51:49,990: 	 Uploading archive /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/src/crab_jobs/crab_CRAB3_Small_Output_Brazos_160720125126/inputs/f01d3892-1371-4878-9f59-04d3ea696fe6default.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2016-07-20 12:51:51,572: 	 Loading required information from the environment
+DEBUG 2016-07-20 12:51:51,573: 	 Found CMSSW_7_3_5_patch2 for slc6_amd64_gcc491 with base /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2
+DEBUG 2016-07-20 12:51:51,573: 	 Making tarball in /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/src/crab_jobs/crab_CRAB3_Small_Output_Brazos_160720125126/inputs/debugFiles.tgz
+DEBUG 2016-07-20 12:51:51,577: 	 Uploading archive /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/src/crab_jobs/crab_CRAB3_Small_Output_Brazos_160720125126/inputs/debugFiles.tgz to the CRAB cache. Using URI https://cmsweb.cern.ch/crabcache
+DEBUG 2016-07-20 12:51:53,196: 	 Result uploading input files: 93e1fdb5eb15e9bbc3070694a174bc604d57436c57ac71e63b72b83949f859bd.tar.gz 
+INFO 2016-07-20 12:51:53,197: 	 Sending the request to the server
+DEBUG 2016-07-20 12:51:53,197: 	 Submitting {'maxjobruntime': 1250, 'adduserfiles': [], 'ignorelocality': 0, 'savelogsflag': 1, 'useparent': 0, 'scheddname': 'crab3test-8@vocms058.cern.ch', 'asyncdest': 'T3_US_TAMU', 'algoargs': 10, 'collector': 'vocms0115.cern.ch', 'cachefilename': '93e1fdb5eb15e9bbc3070694a174bc604d57436c57ac71e63b72b83949f859bd.tar.gz', 'numcores': 1, 'addoutputfiles': [], 'generator': 'pythia', 'maxmemory': 2000, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'priority': 10, 'jobsw': 'CMSSW_7_3_5_patch2', 'edmoutfiles': ['output.root'], 'userfiles': [], 'primarydataset': '', 'inputdata': '/GenericTTbar/HC-CMSSW_5_3_1_START53_V5-v1/GEN-SIM-RECO', 'lfn': '/store/user/moralesm/', 'dryrun': 0, 'workflow': 'crab_CRAB3_Small_Output_Brazos_160720125126', 'sitewhitelist': ['T3_US_TAMU'], 'nonprodsw': 0, 'tfileoutfiles': [], 'oneEventMode': 0, 'debugfilename': '59c8be8fed918494b89aed23f824b9069bed02814e2cc721a2b3ada06630b3a8.tar.gz', 'cacheurl': 'https://cmsweb.cern.ch/crabcache', 'saveoutput': 1, 'publication': 1, 'jobarch': 'slc6_amd64_gcc491', 'totalunits': 0, 'splitalgo': 'FileBased', 'nonvaliddata': 0, 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/global/DBSReader', 'publishgroupname': 0, 'jobtype': 'Analysis', 'publishname2': 'CRAB3_monitor_test'} 
+DEBUG 2016-07-20 12:51:53,197: 	 Encoded submit request: maxjobruntime=1250&ignorelocality=0&savelogsflag=1&useparent=0&scheddname=crab3test-8%40vocms058.cern.ch&asyncdest=T3_US_TAMU&algoargs=10&collector=vocms0115.cern.ch&cachefilename=93e1fdb5eb15e9bbc3070694a174bc604d57436c57ac71e63b72b83949f859bd.tar.gz&numcores=1&generator=pythia&maxmemory=2000&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&priority=10&jobsw=CMSSW_7_3_5_patch2&primarydataset=&inputdata=%2FGenericTTbar%2FHC-CMSSW_5_3_1_START53_V5-v1%2FGEN-SIM-RECO&lfn=%2Fstore%2Fuser%2Fmoralesm%2F&dryrun=0&workflow=crab_CRAB3_Small_Output_Brazos_160720125126&nonprodsw=0&oneEventMode=0&debugfilename=59c8be8fed918494b89aed23f824b9069bed02814e2cc721a2b3ada06630b3a8.tar.gz&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2Fcrabcache&saveoutput=1&publication=1&jobarch=slc6_amd64_gcc491&totalunits=0&splitalgo=FileBased&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fglobal%2FDBSReader&publishgroupname=0&jobtype=Analysis&publishname2=CRAB3_monitor_test&sitewhitelist=T3_US_TAMU&edmoutfiles=output.root
+DEBUG 2016-07-20 12:51:55,044: 	 Result: {'result': [{'RequestName': '160720_175154:moralesm_crab_CRAB3_Small_Output_Brazos_160720125126'}]}
+INFO 2016-07-20 12:51:55,047: 	 Success: Your task has been delivered to the CRAB3 server.
+INFO 2016-07-20 12:51:55,047: 	 Task name: 160720_175154:moralesm_crab_CRAB3_Small_Output_Brazos_160720125126
+INFO 2016-07-20 12:51:55,047: 	 Please use 'crab status' to check how the submission process proceeds.
+DEBUG 2016-07-20 12:51:55,047: 	 About to return
+INFO 2016-07-20 12:51:55,052: 	 Log file is /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/src/crab_jobs/crab_CRAB3_Small_Output_Brazos_160720125126/crab.log

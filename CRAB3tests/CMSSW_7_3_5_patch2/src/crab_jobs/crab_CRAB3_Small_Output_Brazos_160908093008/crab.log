@@ -1,0 +1,108 @@
+DEBUG 2016-09-08 09:30:08,191: 	 Executing command: 'submit'
+DEBUG 2016-09-08 09:30:08,193: 	 Found CRAB cache file /home/georgemm01/.crab3
+DEBUG 2016-09-08 09:30:08,203: 	 Checking credentials
+DEBUG 2016-09-08 09:30:08,204: 	 Found proxy file /home/georgemm01/.x509up_u1452
+DEBUG 2016-09-08 09:30:08,204: 	 Getting proxy life time left
+DEBUG 2016-09-08 09:30:08,309: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -timeleft
+ output : 610200
+
+ error: 
+ retcode : 0
+DEBUG 2016-09-08 09:30:08,414: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -actimeleft
+ output : 610200
+
+ error: 
+ retcode : 0
+DEBUG 2016-09-08 09:30:08,414: 	 Proxy valid for 169:30:00 hours
+INFO 2016-09-08 09:30:08,415: 	 Will use CRAB configuration file crabConfig_tutorial_MC_analysis_def.py
+DEBUG 2016-09-08 09:30:08,415: 	 Loading CRAB configuration file.
+DEBUG 2016-09-08 09:30:10,673: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2016-09-08 09:30:10,789: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza
+
+ error: 
+ retcode : 0
+DEBUG 2016-09-08 09:30:10,790: 	 Checking credentials
+DEBUG 2016-09-08 09:30:10,790: 	 Found proxy file /home/georgemm01/.x509up_u1452
+DEBUG 2016-09-08 09:30:10,790: 	 Getting proxy life time left
+DEBUG 2016-09-08 09:30:10,894: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -timeleft
+ output : 610198
+
+ error: 
+ retcode : 0
+DEBUG 2016-09-08 09:30:10,999: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -actimeleft
+ output : 610198
+
+ error: 
+ retcode : 0
+DEBUG 2016-09-08 09:30:11,000: 	 Proxy valid for 169:29:58 hours
+DEBUG 2016-09-08 09:30:11,105: 	 Executing : 
+ command : env X509_USER_PROXY=/home/georgemm01/.x509up_u1452 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+/cms/uscms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+INFO 2016-09-08 09:30:42,857: 	 The server answered with an error.
+INFO 2016-09-08 09:30:42,857: 	 Server answered with: Database unavailable
+INFO 2016-09-08 09:30:42,857: 	 Error Id: 065d0aa27eb5db2dabcbceaf41fbaf11
+DEBUG 2016-09-08 09:30:42,857: 	 ERROR: Service Unavailable (503):  '<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+    <title>503 Service Unavailable</title>
+    <style type="text/css">
+    #powered_by {
+        margin-top: 20px;
+        border-top: 2px solid black;
+        font-style: italic;
+    }
+
+    #traceback {
+        color: red;
+    }
+    </style>
+</head>
+    <body>
+        <h2>503 Service Unavailable</h2>
+        <p>Database unavailable</p>
+        <pre id="traceback"></pre>
+    <div id="powered_by">
+      <span>
+        Powered by <a href="http://www.cherrypy.org">CherryPy unknown</a>
+      </span>
+    </div>
+    </body>
+</html>
+'
+DEBUG 2016-09-08 09:30:42,857: 	 Command failed with URI: https://cmsweb.cern.ch/crabserver/prod/info
+DEBUG 2016-09-08 09:30:42,857: 	      Input data: {'subresource': 'delegatedn'}
+DEBUG 2016-09-08 09:30:42,857: 	      Request headers: {'X-Error-Http': '503', 'Transfer-Encoding': 'chunked', 'X-Rest-Time': '15230257.034 us', 'X-Error-Detail': 'Database unavailable', 'Server': 'CherryPy/unknown', 'Connection': 'close', 'X-Error-Id': '065d0aa27eb5db2dabcbceaf41fbaf11', 'X-Rest-Status': '401', 'Date': 'Thu, 08 Sep 2016 14:30:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'CMS-Server-Time': 'D=30382148 t=1473345012398952'}
+ERROR 2016-09-08 09:30:42,857: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 339, in __init__
+    self.handleProxy(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 414, in handleProxy
+    all_task_workers_dns = server_info('delegatedn', self.serverurl, self.proxyfilename, baseurl)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/CRABClient/ClientUtilities.py", line 664, in server_info
+    dictresult, dummyStatus, dummyReason = server.get(baseurl, requestdict)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/RESTInteractions.py", line 79, in get
+    return self.makeRequest(uri = uri, data = data, verb = 'GET')
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/RESTInteractions.py", line 128, in makeRequest
+    capath=caCertPath)#, verbose=True)# for debug
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1608/lib/python2.7/site-packages/WMCore/Services/pycurl_manager.py", line 209, in request
+    raise exc
+HTTPException: url=https://cmsweb.cern.ch/crabserver/prod/info, code=503, reason=Service Unavailable, headers={'X-Error-Http': '503', 'Transfer-Encoding': 'chunked', 'X-Rest-Time': '15230257.034 us', 'X-Error-Detail': 'Database unavailable', 'Server': 'CherryPy/unknown', 'Connection': 'close', 'X-Error-Id': '065d0aa27eb5db2dabcbceaf41fbaf11', 'X-Rest-Status': '401', 'Date': 'Thu, 08 Sep 2016 14:30:26 GMT', 'Content-Type': 'text/html;charset=utf-8', 'CMS-Server-Time': 'D=30382148 t=1473345012398952'}

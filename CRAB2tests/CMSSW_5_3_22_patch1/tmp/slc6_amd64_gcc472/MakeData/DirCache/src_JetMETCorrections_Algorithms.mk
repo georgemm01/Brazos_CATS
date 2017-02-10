@@ -1,0 +1,2 @@
+ALL_PACKAGES += JetMETCorrections/Algorithms
+subdirs_src_JetMETCorrections_Algorithms := src_JetMETCorrections_Algorithms_src src_JetMETCorrections_Algorithms_interface src_JetMETCorrections_Algorithms_doc

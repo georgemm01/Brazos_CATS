@@ -1,0 +1,2 @@
+ALL_PACKAGES += JetMETCorrections/Modules
+subdirs_src_JetMETCorrections_Modules := src_JetMETCorrections_Modules_python src_JetMETCorrections_Modules_test src_JetMETCorrections_Modules_src src_JetMETCorrections_Modules_plugins src_JetMETCorrections_Modules_interface

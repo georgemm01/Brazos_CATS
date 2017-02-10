@@ -1,0 +1,96 @@
+DEBUG 2016-07-16 09:30:09,473: 	 Executing command: 'submit'
+DEBUG 2016-07-16 09:30:09,475: 	 Found CRAB cache file /home/georgemm01/.crab3
+DEBUG 2016-07-16 09:30:09,488: 	 Checking credentials
+DEBUG 2016-07-16 09:30:09,488: 	 Found proxy file /home/georgemm01/.x509up_u1452
+DEBUG 2016-07-16 09:30:09,488: 	 Getting proxy life time left
+DEBUG 2016-07-16 09:30:09,597: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -timeleft
+ output : 525602
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 09:30:09,704: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -actimeleft
+ output : 525602
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 09:30:09,705: 	 Proxy valid for 146:00:02 hours
+INFO 2016-07-16 09:30:09,705: 	 Will use CRAB configuration file crabConfig_tutorial_MC_analysis.py
+DEBUG 2016-07-16 09:30:09,705: 	 Loading CRAB configuration file.
+DEBUG 2016-07-16 09:30:12,138: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2016-07-16 09:30:12,258: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 09:30:12,258: 	 Checking credentials
+DEBUG 2016-07-16 09:30:12,258: 	 Found proxy file /home/georgemm01/.x509up_u1452
+DEBUG 2016-07-16 09:30:12,258: 	 Getting proxy life time left
+DEBUG 2016-07-16 09:30:12,363: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -timeleft
+ output : 525599
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 09:30:12,469: 	 Executing : 
+ command : voms-proxy-info -file /home/georgemm01/.x509up_u1452 -actimeleft
+ output : 525599
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 09:30:12,469: 	 Proxy valid for 145:59:59 hours
+DEBUG 2016-07-16 09:30:12,574: 	 Executing : 
+ command : env X509_USER_PROXY=/home/georgemm01/.x509up_u1452 voms-proxy-info -fqan
+ output : /cms/Role=NULL/Capability=NULL
+/cms/uscms/Role=NULL/Capability=NULL
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 09:30:13,884: 	 Registering user credentials for server /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+DEBUG 2016-07-16 09:30:13,998: 	 Executing : 
+ command : openssl x509 -in ~/.globus/usercert.pem -subject -noout
+ output : subject= /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 09:30:13,999: 	 Getting myproxy life time left for myproxy.cern.ch
+DEBUG 2016-07-16 09:30:13,999: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza_cmsweb.cern.ch for credential name
+DEBUG 2016-07-16 09:30:16,509: 	 Executing : 
+ command : myproxy-info -l 8908d96525ffb0442c032582ca2ff06415922363 -s myproxy.cern.ch
+ output : username: 8908d96525ffb0442c032582ca2ff06415922363
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch
+  timeleft: 172:15:41  (7.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 09:30:16,511: 	 Myproxy is valid: 620141
+DEBUG 2016-07-16 09:30:16,617: 	 Executing : 
+ command : openssl x509 -noout -in ~/.globus/usercert.pem -dates
+ output : notBefore=Jun 16 20:28:04 2016 GMT
+notAfter=Jul 21 20:28:04 2017 GMT
+
+ error: 
+ retcode : 0
+DEBUG 2016-07-16 09:30:16,668: 	 Delegating a myproxy for 720:00 hours
+DEBUG 2016-07-16 09:30:16,669: 	 Calculating hash of /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=moralesm/CN=725145/CN=Jorge Daniel Morales Mendoza_cmsweb.cern.ch for credential name
+ERROR 2016-07-16 09:50:16,745: 	 Timeout in export GT_PROXY_MODE=rfc ; myproxy-init -d -n -s myproxy.cern.ch -x -R '/DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch' -x -Z '/DC=ch/DC=cern/OU=computers/CN=vocms(045|052|021|031|0118|0118a|0119|0108).cern.ch' -l '8908d96525ffb0442c032582ca2ff06415922363' -t 168:00 -c 720:00 execution.
+ERROR 2016-07-16 09:50:16,746: 	 Problems delegating My-proxy. need more than 2 values to unpack
+ERROR 2016-07-16 09:50:16,746: 	 Caught exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1607/bin/crab", line 160, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1607/bin/crab", line 146, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1607/lib/python2.7/site-packages/CRABClient/Commands/submit.py", line 34, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1607/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 339, in __init__
+    self.handleProxy(proxyOptsSetPlace)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1607/lib/python2.7/site-packages/CRABClient/Commands/SubCommand.py", line 419, in handleProxy
+    self.proxy.createNewMyProxy(timeleftthreshold = 60 * 60 * 24 * RENEW_MYPROXY_THRESHOLD, nokey = True)
+  File "/cvmfs/cms.cern.ch/crab3/slc6_amd64_gcc493/cms/crabclient/3.3.1607/lib/python2.7/site-packages/CRABClient/CredentialInteractions.py", line 348, in createNewMyProxy
+    raise ProxyCreationException("Problems delegating My-proxy. %s" % msg)
+ProxyCreationException: Problems delegating My-proxy. need more than 2 values to unpack

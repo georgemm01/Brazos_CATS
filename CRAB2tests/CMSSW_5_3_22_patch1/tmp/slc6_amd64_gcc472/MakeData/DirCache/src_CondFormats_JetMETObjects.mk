@@ -1,0 +1,2 @@
+ALL_PACKAGES += CondFormats/JetMETObjects
+subdirs_src_CondFormats_JetMETObjects := src_CondFormats_JetMETObjects_src src_CondFormats_JetMETObjects_bin src_CondFormats_JetMETObjects_test

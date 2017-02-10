@@ -1,0 +1,2 @@
+ALL_PACKAGES += JetMETAnalysis/JetUtilities
+subdirs_src_JetMETAnalysis_JetUtilities := src_JetMETAnalysis_JetUtilities_src src_JetMETAnalysis_JetUtilities_bin src_JetMETAnalysis_JetUtilities_interface src_JetMETAnalysis_JetUtilities_plugins

@@ -1,0 +1,6 @@
+tmp/slc6_amd64_gcc472/src/JetMETAnalysis/JetAnalyzers/bin/jet_apply_jec_x/jet_apply_jec_x.o: \
+ src/JetMETAnalysis/JetAnalyzers/bin/jet_apply_jec_x.cc \
+ src/JetMETAnalysis/JetUtilities/interface/CommandLine.h \
+ src/CondFormats/JetMETObjects/interface/FactorizedJetCorrector.h \
+ src/CondFormats/JetMETObjects/interface/JetCorrectorParameters.h \
+

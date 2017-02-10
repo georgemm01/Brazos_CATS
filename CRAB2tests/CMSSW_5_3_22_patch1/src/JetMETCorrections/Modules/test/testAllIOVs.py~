@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+
+import subprocess
+
+iovs = [
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_AK5Calo',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_AK5PF',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_AK5PFchs',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_AK5JPT',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_AK5TRK',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_AK7Calo',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_AK7PF',
+	'JetCorrectorParametersCollection_Summer12_V8_DATA_AK7PFchs',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_AK7JPT',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_KT4Calo',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_KT4PF',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_KT6Calo',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_KT6PF',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_IC5Calo',
+    'JetCorrectorParametersCollection_Summer12_V8_DATA_IC5PF'
+    
+    
+    ]
+
+for iov in iovs :
+    s = 'cmscond_list_iov -c sqlite_file:Summer12_V8_DATA.db -t ' + iov
+    subprocess.call( [s, ""], shell=True )    

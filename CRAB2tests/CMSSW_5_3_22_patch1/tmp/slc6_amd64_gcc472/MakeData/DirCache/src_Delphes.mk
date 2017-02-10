@@ -1,0 +1,2 @@
+ALL_SUBSYSTEMS+=Delphes
+subdirs_src_Delphes = src_Delphes_Cards src_Delphes_scripts src_Delphes_readers src_Delphes_converters src_Delphes_tmp src_Delphes_display src_Delphes_examples src_Delphes_classes src_Delphes_doc src_Delphes_modules src_Delphes_external src_Delphes_python
