@@ -16,7 +16,7 @@ $ cd Brazos_CATS
 
 ## For CRAB2 Jobs
 
-1. Make sure your .barsh_profile has the follwoing:
+##### 1. Make sure your .barsh_profile has the follwoing:
 ```
 umask 0022
 export VO_CMS_SW_DIR=/cvmfs/cms.cern.ch
@@ -27,7 +27,7 @@ source /home/hepxadmin/CRAB_2_11_1_patch1/crab.sh
 
 If it didn't have it already, make sure to source it, or export those variables manually before continuing. 
 
-2. Setup your environment for the CRAB2 CMSSW version. It's good practice to know how to source CMSSW versions, so we'll add a couple unnecessary, but instructive steps (the first two). (Asuming you are already in `Brazos_CATS/`)
+##### 2. Setup your environment for the CRAB2 CMSSW version. It's good practice to know how to source CMSSW versions, so we'll add a couple unnecessary, but instructive steps (the first two). (Asuming you are already in `Brazos_CATS/`)
 ```
 $ cmsrel CMSSW_5_3_22_patch1
 $ cp -r CRAB2tests/CMSSW_5_3_22_patch1/* CMSSW_5_3_22_patch1/.
@@ -35,13 +35,13 @@ $ cd CMSSW_5_3_22_patch1/src
 $ cmsenv
 ```
 
-3. Initialize your proxy. You must have a CMS account, be registered in the CMS VO, and have your certificate/DN mapped. For instructions about that [see here](http://mitchcomp.physics.tamu.edu/tier3/newuser/new_user.php#sec2). 
+##### 3. Initialize your proxy. You must have a CMS account, be registered in the CMS VO, and have your certificate/DN mapped. For instructions about that [see here](http://mitchcomp.physics.tamu.edu/tier3/newuser/new_user.php#sec2). 
 ```
 $ voms-proxy-init -voms cms -out ${HOME}/.x509up_u${UID} 
 $ export X509_USER_PROXY=${HOME}/.x509up_u${UID} 
 ```
 
-3. Submit the CATs tests. Just go to the location and crab-submit them. There are 8 of them, 4 to submit via condor, 4 directly to slurm. Each set of 4 contains two small and two large output tests, witing to Brazos or FNAL. 
+##### 4. Submit the CATs tests. Just go to the location and crab-submit them. There are 8 of them, 4 to submit via condor, 4 directly to slurm. Each set of 4 contains two small and two large output tests, witing to Brazos or FNAL. 
 ```
 $ cd JetMETAnalysis/JetAnalyzers/test 
 $ crab -create -cfg crabSB.cfg -submit 1-10  # create the jobs and submit them (this could be split into 2 commands but its faster to -create and -submit at the same time) 
@@ -57,6 +57,6 @@ The 8 tests are:
     -Small and Large output to Brazos: `crabslurmSB.cfg crabslurmLB.cfg`
     -Small and Large output to FNAL: `crabslurmSF.cfg crabslurmLF.cfg`
     
-4. Watchout, you need to be able to log into FNAL machines to write output there. Which means you need to have kerberos credentials. [See here](http://mitchcomp.physics.tamu.edu/tier3/newuser/new_user.php#sec7)
+##### 5. Watchout, you need to be able to log into FNAL machines to write output there. Which means you need to have kerberos credentials. [See here](http://mitchcomp.physics.tamu.edu/tier3/newuser/new_user.php#sec7)
 
 
