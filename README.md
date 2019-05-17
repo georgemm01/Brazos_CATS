@@ -99,7 +99,7 @@ $ export X509_USER_PROXY=${HOME}/.x509up_u${UID}
 ##### 5. Go to the submission area and submit your jobs
 ```
 $ cd CMSSW_7_3_5_patch2/src/submission
-$ submit -c crabConfig_tutorial_MC_analysis_def.py
+$ crab submit -c crabConfig_tutorial_MC_analysis_def.py
 ```
 
 If things worked, the output on your screen should look like this: 
