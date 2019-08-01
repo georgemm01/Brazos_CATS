@@ -15,6 +15,8 @@ git clone https://github.com/georgemm01/Brazos_CATS.git
 $ cd Brazos_CATS
 ```
 
+The guide contains: CRAB3 test instructions, automation instructions, and CRAB2 test instructions (deprecated).
+
 
 ## For CRAB2 Tests
 
@@ -113,4 +115,20 @@ Task name: 170208_153029:moralesm_crab_CRAB3_Small_Output_Brazos_170208093011
 Please use 'crab status' to check how the submission process proceeds.
 Log file is /home/georgemm01/CRAB3-tutorial/CMSSW_7_3_5_patch2/src/crab_jobs/crab_CRAB3_Small_Output_Brazos_170208093011/crab.log
 ```
+
+
+## Automating CATs Tests
+
+For automation you'll need two things: scripts that set up the environment and submit the jobs, and crontab enabled for yourself under Brazos (contact Brazos Help to get it enabled, mention you'll be perfomring admin tasks and need it for running test jobs). 
+
+Take the scripts from this resposorty `automation` directory. Modify paths in case your paths are different, or modify for CMSSW version numbers if the tests have changed. 
+
+To set up the automation you'll need to have a weekly renovated proxy. Due to security reasons that part is not described here, contact the current site admin for that. 
+
+Finally, to define the automated tasks, you just need to edit the crontab script, do the following for a CRAB3 test: 
+
+```
+30 09 * * * <path-to>Brazos_CATS/automation/testcrab3_1.sh
+``` 
+The latter is an example set up to run daily at 9:30am. 
 
